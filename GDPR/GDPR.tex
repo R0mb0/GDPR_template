@@ -1,0 +1,238 @@
+\documentclass[hidelinks,12pt,a4paper]{article}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier} 
+
+% Images
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\graphicspath{ {../Images} }
+
+% Minipages in the same line
+\usepackage{tabularx}
+
+% Create page border 
+\usepackage{tikz}
+\usepackage[framemethod=TikZ]{mdframed}
+\newmdenv[tikzsetting={draw=black, line width=6pt}, backgroundcolor=none]{roundCornerPage}
+
+% Adjust margins
+\usepackage{changepage}
+\usepackage{geometry}
+
+% Dummy text
+\usepackage{lipsum} 
+
+% To have conditional text
+\usepackage{ifthen}
+
+% License
+\usepackage[
+type={CC},
+modifier={by-nc-sa},
+version={4.0},
+]{doclicense}
+
+%---------------------------------- Setting params -----------------------------------%
+
+%%%%% Set this value true to have two informations part on top of document %%%%% 
+\newbool{splitedInfo}
+\setbool{splitedInfo}{true}
+%%%%% 
+
+%%%%% Set this value true to have circular logo image %%%%% 
+\newbool{circularLogo}
+\setbool{circularLogo}{true}
+%%%%% 
+
+%%%%% Set logo image %%%%% 
+\newcommand{\logoImage}{\includegraphics[scale=0.025]{Lorem_Ipsum_Logo.jpg}}
+% Setting circle size
+\newcommand{\circleSize}{1.5cm}
+% Center image manually 
+\newcommand{\rightMargin}{0mm}
+\newcommand{\leftMargin}{1.5cm}
+\newcommand{\vertical}{-1cm}
+%%%%% 
+
+%%%%% Set informations %%%%% 
+\newcommand{\informations}{\lipsum[1][1-4]}
+%%%%% 
+
+%%%%% Set second informations column %%%%% 
+\newcommand{\informationsTwo}{\lipsum[1][1-4]}
+%%%%% 
+
+%---------------------------------- End setting params -----------------------------------%
+
+\begin{document}
+	% Remove page number
+	\pagestyle{empty}
+	
+	\title{\textbf{GDPR template}}
+	\author{Francesco Rombaldoni}
+	\date{}
+	
+	\maketitle
+	\newpage
+	
+	%---------------------------------------------------------------------%
+	\newgeometry{left=0.1cm, right=0.1cm, top=0.1cm, bottom=0.1cm}
+		\begin{roundCornerPage}[roundcorner=15pt]
+			\begin{minipage}[t][0.97\paperheight][t]{0.9\paperwidth}%0.9\paperwidth%0.9\paperheight
+				
+				\begin{minipage}[t][0.18\textwidth][t]{\textwidth}
+					\ifthenelse{\boolean{splitedInfo}}
+					{
+						\begin{tabularx}{\textwidth}{XXX}
+							{
+							% First of three columns
+							\informations
+							}&{
+							% Second of three columns
+							\ifthenelse{\boolean{circularLogo}}
+							{
+									\begin{center}
+									\begin{adjustwidth}{\leftMargin}{\rightMargin}
+										\vspace*{\vertical}
+										\begin{tikzpicture}
+											\clip (0,0) circle (\circleSize) node {\logoImage};
+										\end{tikzpicture}
+									\end{adjustwidth}
+								\end{center}
+							}{
+								\begin{center}
+										\begin{adjustwidth}{\leftMargin}{\rightMargin}
+											\vspace*{\vertical}
+											\logoImage
+										\end{adjustwidth}
+								\end{center}
+							}
+							}&{
+							% Last Column
+							\hspace*{1cm}
+							\begin{minipage}[t][0.18\textwidth][t]{\linewidth}
+								\informationsTwo
+							\end{minipage}
+							}
+						\end{tabularx}
+					}{
+						\begin{tabularx}{\textwidth}{XX}
+							{
+								% First column
+								\ifthenelse{\boolean{circularLogo}}
+								{
+									\begin{center}
+										\begin{adjustwidth}{\leftMargin}{\rightMargin}
+											\vspace*{\vertical}
+											\begin{tikzpicture}
+												\clip (0,0) circle (\circleSize) node {\logoImage};
+											\end{tikzpicture}
+										\end{adjustwidth}
+									\end{center}
+								}{
+									\begin{center}
+										\begin{adjustwidth}{\leftMargin}{\rightMargin}
+											\vspace*{\vertical}
+											\logoImage
+										\end{adjustwidth}
+									\end{center}
+								}
+							}&{
+								% Last column
+								\informations
+							}
+						\end{tabularx}
+					}
+				\end{minipage}
+				% End line
+				\vspace*{5mm}
+				\hspace*{-1.5mm}
+				\noindent\tikz\draw[line width=4pt, line cap=round, black!80](0,0) -- node[] {} (1.065\linewidth,0);
+				%===== Bottom part ========%
+				
+				\begin{center}
+					\Large{\textbf{Informativa sulla privacy}}
+				\end{center}
+				
+				Gentile cliente, ai sensi dell'articolo 13 del Regolamento UE 2016/679 (anche detto "GDPR 2016/679") recante le disposizioni a tutela dei dati personali delle persone e altri soggetti ed in relazione ai dati di cui entreremo in possesso, desideriamo informarla di quanto segue: 
+				
+				\begin{tabularx}{\linewidth}{XX}
+					{ %First column
+						\begin{enumerate}
+							\item[\large{\textbf{1.}}] \large{\textbf{I dati raccolti e la loro finalità}}\medskip \newline
+							\footnotesize
+							Dati raccolti per poter accedere al servizio con il fine di: "Inserire fine per la raccolta"
+							\begin{itemize}
+								\item Nome.
+								\item Cognome.
+								\item Sesso.
+								\item Data di nascita.
+								\item Indirizzo di casa.
+								\item Indirizzo e-mail.
+								\item Numero di telefono o di cellulare.
+							\end{itemize}
+							\item[\large{\textbf{2.}}]  \large{\textbf{Trattamento dei dati raccolti}} \newline
+							\footnotesize
+							\vspace*{-5mm}
+							\begin{itemize}
+								\item Tutti i dati sono trattati in conformità alle vigenti normative in materia di privacy (Reg. UE 2016/679).
+								\item Tutti i dati sono trattati in modo lecito, corretto e trasparente nei confronti dell'interessato, nel rispetto dei principi generali previsti dall'Art.5 del GDPR.
+								\item Specifiche misure di sicurezza sono osservate per prevenire la perdita dei dati, usi illeciti, o non corretti ed accessi	non autorizzati (GDPR, Art.32).
+								\item Nessun dato è condiviso esternamente con un ente che non sia la "Nome ente" e con del personale che non sia interno del suddetto ente.
+							\end{itemize}
+						\end{enumerate}
+					}&{
+						\begin{enumerate}
+							\item[\large{\textbf{3.}}]  \large{\textbf{Diritti degli interessati}} \newline
+							\footnotesize
+							\vspace*{-5mm}
+							\begin{itemize}
+								\item Diritto di richiedere la presenza e l’accesso a dati personali che lo riguardano (Art.15 "Diritto di accesso").
+								\item Diritto di ottenere la rettifica/integrazione di dati inesatti o incompleti (Art.16 "Diritto di rettifica").
+								\item Diritto della cancellazione dei dati (Art.17 "Diritto alla cancellazione"). In caso di cancellazione dei dati obbligatori si perde l'iscrizione al servizio.
+								\item Diritto di ottenere la limitazione del trattamento (Art.18 "Diritto alla limitazione").
+								\item Diritto di ricevere in formato strutturato i dati che lo riguardano (Art.20 "Diritto alla portabilità").
+								\item Diritto di opporsi al trattamento (Art.21 "Diritto di opposizione").
+								\item Diritto di revocare un consenso precedentemente prestato.
+								\item Diritto di presentare, in caso di mancato riscontro, un reclamo all'Autorità Garante per la protezione dei dati.
+							\end{itemize}
+							\item[\large{\textbf{4.}}]  \large{\textbf{Periodo di conservazione dei dati}} \newline
+							\footnotesize
+							\vspace*{-5mm}
+							\begin{itemize}
+								\item Tutti i dati raccolti sono conservati fino a quando l'interessato è cliente di "Nome ente". In caso di espressa volontà da parte dell'interessato di cancellare la propria iscrizione, varranno conseguentemente cancellati i dati dell'interessato. Stessa cosa si verifica dopo un anno di inattività dello stesso.
+							\end{itemize}
+						\end{enumerate}
+						
+						\vspace*{\fill}
+						\begin{enumerate}
+							\item[]  \small{\textbf{Firmando l'interessato esprime il consenso al trattamento dei suoi dati personali nei termini definiti nell'informativa che precede e dichiara di aver letto e compreso l'informativa.}} \newline
+							\begin{center}
+								\scriptsize
+								Firma leggibile dell'interessato
+								\vspace*{5mm}
+								\hspace*{-20mm}
+								\newline
+								\rule{50mm}{0.30mm}
+								
+							\end{center}
+						\end{enumerate}
+						
+					}
+				\end{tabularx}
+				
+				\end{minipage}
+			\end{roundCornerPage}
+		\restoregeometry
+	%---------------------------------------------------------------------%
+	
+	\newpage
+	
+	%Print license
+	\vspace*{\fill}
+	\doclicenseThis
+	
+\end{document}
