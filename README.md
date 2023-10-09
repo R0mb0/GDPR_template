@@ -1,6 +1,6 @@
 # GDPR template made in LaTeX
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
-
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/f8d1c683d77048e29b3c8ffa7aa178c7)](https://app.codacy.com/gh/R0mb0/GDPR_template/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![Compilation_Test](https://github.com/R0mb0/GDPR_template/actions/workflows/Compilation_Test.yml/badge.svg)](https://github.com/R0mb0/GDPR_template/actions/workflows/Compilation_Test.yml)
 
 ## Configurations
