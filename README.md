@@ -1,6 +1,8 @@
 # GDPR template made in LaTeX
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 
+[![Compilation_Test](https://github.com/R0mb0/GDPR_template/actions/workflows/Compilation_Test.yml/badge.svg)](https://github.com/R0mb0/GDPR_template/actions/workflows/Compilation_Test.yml)
+
 ## Configurations
 -  **Normal logo & one infomtations column**
    ![1](https://github.com/R0mb0/GDPR_template/blob/main/ReadMe_Images/One_informations_column_%26_normal_logo.png)
