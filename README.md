@@ -35,8 +35,8 @@
 8.  Edit GDPR text as you want.
     -   Go below the "Bottom part" of code (the bottom part start from 154th code line) and edit it.
 9.  Now "Commit changes"!
-10.  Wait 2 minutes, got to "Actions" -> "Compile" -> click on the last one (look at the date on right) -> scroll down the page and click on "artifact file".
-11.  Done! now you have your document :).       
+10. Wait 2 minutes, got to "Actions" -> "Compile" -> click on the last one (look at the date on right) -> scroll down the page and click on "artifact file".
+11. Done! now you have your document :).       
 ---
 
 # License
