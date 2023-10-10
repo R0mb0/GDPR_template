@@ -30,7 +30,7 @@
     -   Set "splitedInfo" variable (at code line 41) to true, to have two column informatios; false to have only one column.
     -   Set "circularLogo" variable (at code line 47) to true, to have the logo cropped into a circle; false to include your logo image as it is.
 7.  Add your information into information column.
-    1.  Go to 61th code line, delete "\lipsum[1][1-4]" command then add your text.
+    1.  Go to 61th code line, delete ```\lipsum[1][1-4]``` command then add your text.
     2.  If you have chosen to have two informations columns, also, do the same at 65th code line.
 8.  Edit GDPR text as you want.
     -   Go below the "Bottom part" of code (the bottom part start from 154th code line) and edit it.
