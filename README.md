@@ -24,16 +24,16 @@
 5.  Overwrite demo image with your into the LaTeX document (if necessary change the parameters down the image name to center it).
     1.  Access "GDPR" folder from main page and click on "GDPR.tex".
     2.  Now click on "Edit this file" (the pencil on top right).
-    3.  Overwrite demo image name with your own (at code line 51).
+    3.  Overwrite demo image name with your own (at code line 54).
     4.  If necessary use params below to center it.
 6.  Now, chose if you want one or two informations columns and if you want a circular logo in your document.
-    -   Set "splitedInfo" variable (at code line 41) to true, to have two column informatios; false to have only one column.
-    -   Set "circularLogo" variable (at code line 47) to true, to have the logo cropped into a circle; false to include your logo image as it is.
+    -   Set "splitedInfo" variable (at code line 45) to true, to have two column informatios; false to have only one column.
+    -   Set "circularLogo" variable (at code line 50) to true, to have the logo cropped into a circle; false to include your logo image as it is.
 7.  Add your information into information column.
-    1.  Go to 61th code line, delete ```\lipsum[1][1-4]``` command then add your text.
-    2.  If you have chosen to have two informations columns, also, do the same at 65th code line.
+    1.  Go to 64th code line, delete ```\lipsum[1][1-4]``` command then add your text.
+    2.  If you have chosen to have two informations columns, also, do the same at 68th code line.
 8.  Edit GDPR text as you want.
-    -   Go below the "Bottom part" of code (the bottom part start from 154th code line) and edit it.
+    -   Go below the "Bottom part" of code (the bottom part start from 157th code line) and edit it.
 9.  Now "Commit changes"!
 10. Wait 2 minutes, got to "Actions" -> "Compile" -> click on the last one (look at the date on right) -> scroll down the page and click on "artifact file".
 11. Done! now you have your document :).       
