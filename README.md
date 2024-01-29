@@ -14,7 +14,7 @@
     ![4](https://github.com/R0mb0/GDPR_template/blob/main/ReadMe_Images/Two_informations_columns_%26_circular_logo.png)
 
 ## Personalize online this document for free!
-1.  Fork this repository.
+1.  Fork this repository by pressing the second button at the top right.
 2.  Rename the repository as you want and change the description then Fork it!
 3.  ⚠️ You have to activate "Actions" on your repo; go to "Actions", click on "I understand my workflows, go ahead and enable them" ⚠️
 4.  Upload your images using GitHub into the images folder!
