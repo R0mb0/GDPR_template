@@ -45,8 +45,8 @@
     - Go below the "Bottom part" of code (the bottom part start from 157th code line)
        and edit it.
 9. Now "Commit changes"!
-10. Wait 2 minutes, got to "Actions" -> "Compile" -> click on the last one (look at
- the date on right) -> scroll down the page and click on "artifact file".
+10. Wait 2 minutes, got to "Actions" -> "Compile" -> click on the last one (look
+ at the date on right) -> scroll down the page and click on "artifact file".
 11. Done! now you have your document :).
 
 ---
