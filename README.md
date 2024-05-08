@@ -19,8 +19,8 @@
 
 1. Fork this repository by pressing the second button at the top right.
 2. Rename the repository as you want and change the description then Fork it!
-3. ⚠️ You have to activate "Actions" on your repo; go to "Actions", click on 
-"I understand my workflows, go ahead and enable them" ⚠️
+3. ⚠️ You have to activate "Actions" on your repo; go to "Actions", click on
+ "I understand my workflows, go ahead and enable them" ⚠️
 4. Upload your images using GitHub into the images folder!
     1. Access the folder from main page.
     2. "Add file" -> "Upload files" -> drag and drop your images here.
@@ -39,11 +39,14 @@
  cropped into a circle; false to include your logo image as it is.
 7. Add your information into information column.
     1. Go to 64th code line, delete ```\lipsum[1][1-4]``` command then add your text.
-    2. If you have chosen to have two informations columns, also, do the same at 68th code line.
+    2. If you have chosen to have two informations columns, also, do the same at
+ 68th code line.
 8. Edit GDPR text as you want.
-    - Go below the "Bottom part" of code (the bottom part start from 157th code line) and edit it.
+    - Go below the "Bottom part" of code (the bottom part start from 157th code line)
+       and edit it.
 9. Now "Commit changes"!
-10. Wait 2 minutes, got to "Actions" -> "Compile" -> click on the last one (look at the date on right) -> scroll down the page and click on "artifact file".
+10. Wait 2 minutes, got to "Actions" -> "Compile" -> click on the last one (look at
+ the date on right) -> scroll down the page and click on "artifact file".
 11. Done! now you have your document :).
 
 ---
